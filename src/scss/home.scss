@@ -1,3 +1,193 @@
 //====================================================================================================
+.column-left {
+  width: 70%;
+}
+.column-left__header {
+  display: flex;
+}
+.header {
+  &__photo {
+    flex: 0 1 auto;
+  }
+  &__photo img {
+    width: 250px;
+    height: 250px;
+    border: 9px solid #484fa0;
+    border-image: linear-gradient(180deg, #04b2e7 0%, #484fa0 99.03%);
+    border-image-slice: 1;
+  }
+  &__about {
+    flex: 1 1 auto;
+  }
+}
+.header__about {
+  padding-left: 25px;
+}
+.about {
+  &__title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.005em;
+    color: #277fc3;
+    padding: 10px 0;
+  }
+  &__title span {
+    font-weight: 300;
+    color: $mainColor;
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
 
+  &__contacts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+  }
+}
+.contacts {
+  &__list {
+  }
+
+  &__item {
+    padding-left: 27px;
+    position: relative;
+  }
+  &__item:not(:last-child) {
+    padding-bottom: 8px;
+  }
+}
+.column-right {
+  width: 30%;
+  background: linear-gradient(180deg, #484fa0 0%, #04b2e7 100%);
+}
 //====================================================================================================
+.column-left {
+  &__content {
+    flex: 1 1 auto;
+    height: 100%;
+    padding-right: 38px;
+    padding-left: 28px;
+  }
+
+  &__timeline {
+    position: relative;
+    flex: 0 0 auto;
+    height: 100%;
+    width: 68px;
+  }
+  &__timeline:before {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      #484fa0 0%,
+      #277fc3 48.96%,
+      #04b2e7 100%
+    );
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  &__main {
+    display: flex;
+    height: 100%;
+  }
+}
+.experience {
+  &__content {
+    padding-top: 44px;
+  }
+
+  &__title {
+    padding-left: 8px;
+  }
+
+  &__block {
+    padding-top: 42px;
+  }
+}
+.title-article {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+  color: #42489e;
+  text-transform: uppercase;
+}
+.block {
+  position: relative;
+  &__year {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #999999;
+    position: absolute;
+    left: 0;
+    top: 42px;
+    margin: 0 0 0 -94px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+
+    color: #323232;
+    position: relative;
+  }
+  &__title:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background: 20px/20px url("@img/step.svg");
+    margin-left: -40px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 4.5%;
+
+    letter-spacing: 0.03em;
+
+    color: #9b9b9b;
+    padding-top: 16px;
+  }
+
+  &__text {
+    padding-top: 32px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+
+    letter-spacing: 0.03em;
+  }
+}
+.title-article {
+  position: relative;
+}
+.title-article img {
+  position: absolute;
+  left: -48px;
+  top: 0;
+  width: 35px;
+  height: 35px;
+}
