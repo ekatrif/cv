@@ -1,28 +1,43 @@
-//====================================================================================================
+//=========Общие стили===========================================================================================
+
+//=========Шапка===========================================================================================
+
 .column-left {
   width: 70%;
+  padding-right: 15px;
 }
 .column-left__header {
   display: flex;
 }
 .header {
   &__photo {
-    flex: 0 1 auto;
+    flex: 0 0 35%;
+    position: relative;
   }
   &__photo img {
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
     border: 9px solid #484fa0;
+
     border-image: linear-gradient(180deg, #04b2e7 0%, #484fa0 99.03%);
     border-image-slice: 1;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    object-fit: cover;
   }
   &__about {
-    flex: 1 1 auto;
+    flex: 0 0 65%;
   }
 }
 .header__about {
-  padding-left: 25px;
+  padding: 10px 0 0 25px;
 }
+
 .about {
   &__title {
     font-weight: 900;
@@ -30,7 +45,6 @@
     line-height: 36px;
     letter-spacing: 0.005em;
     color: #277fc3;
-    padding: 10px 0;
   }
   &__title span {
     font-weight: 300;
@@ -42,7 +56,7 @@
     line-height: 20px;
     letter-spacing: 0.005em;
     text-transform: uppercase;
-    padding-bottom: 30px;
+    margin: 12px 0 30px 0;
   }
 
   &__contacts {
@@ -64,16 +78,34 @@
     padding-bottom: 8px;
   }
 }
-.column-right {
-  width: 30%;
-  background: linear-gradient(180deg, #484fa0 0%, #04b2e7 100%);
+
+//========Адаптация Шапки============================================================================================
+
+@media (max-width: 767px) {
+  .column-left__header {
+    flex-direction: column-reverse;
+  }
+  .header {
+    &__about {
+      flex: 0 1 100%;
+      margin: 0 0 25px 0;
+    }
+    &__photo {
+      flex: 0 1 150px;
+    }
+    &__photo img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
 }
-//====================================================================================================
+
+//================Контент левой колонка====================================================================================
 .column-left {
   &__content {
     flex: 1 1 auto;
     height: 100%;
-    padding-right: 38px;
+
     padding-left: 28px;
   }
 
@@ -103,11 +135,13 @@
     height: 100%;
   }
 }
-.experience {
+.experience,
+.education {
   &__content {
-    padding-top: 44px;
+    margin-top: 44px;
   }
-
+}
+.content-block {
   &__title {
     padding-left: 8px;
   }
@@ -172,7 +206,7 @@
   }
 
   &__text {
-    padding-top: 32px;
+    padding-top: 20px;
 
     font-weight: 400;
     font-size: 16px;
@@ -190,4 +224,17 @@
   top: 0;
   width: 35px;
   height: 35px;
+}
+
+.column-right {
+  width: 30%;
+  background: linear-gradient(180deg, #484fa0 0%, #04b2e7 100%);
+}
+.content-list__item {
+  padding-left: 27px;
+  position: relative;
+  overflow-wrap: anywhere;
+}
+.content-list__item a:hover {
+  text-decoration: underline;
 }

@@ -38,3 +38,13 @@
   margin-left: -27px;
   margin-top: 2px;
 }
+._icon-arrow-list:before {
+  content: "\e904";
+  position: absolute;
+  margin-left: -27px;
+  margin-top: 4px;
+  color: #484fa0;
+}
+._icon-arrow-list:hover:before {
+  color: #04b2e7;
+}
