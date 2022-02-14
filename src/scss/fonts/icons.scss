@@ -35,16 +35,29 @@
 ._icon-quote:before {
   content: "\e903";
   position: absolute;
-  margin-left: -27px;
-  margin-top: 2px;
+  margin-top: -42px;
+  font-size: 18px;
 }
-._icon-arrow-list:before {
+._icon-arrow-list-dark:before {
   content: "\e904";
   position: absolute;
   margin-left: -27px;
   margin-top: 4px;
   color: #484fa0;
 }
-._icon-arrow-list:hover:before {
+._icon-arrow-list-dark:hover:before {
   color: #04b2e7;
+}
+._icon-arrow-list-light:before {
+  content: "\e904";
+  position: absolute;
+  margin-left: -35px;
+  margin-top: 8px;
+  color: #04b2e7;
+  background: #ffffff;
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+}
+._icon-arrow-list-light:hover:before {
 }

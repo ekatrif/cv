@@ -5,6 +5,7 @@
 .column-left {
   width: 70%;
   padding-right: 15px;
+  padding-bottom: 100px;
 }
 .column-left__header {
   display: flex;
@@ -23,9 +24,11 @@
     border-image-slice: 1;
 
     position: absolute;
-    //Настроить округление до наиббольшего целого
-    width: calc(100% + 1px);
-    height: calc(100% + 1px);
+
+    //Настроить округление до наибольшего целого числа пикселей
+
+    width: 101%;
+    height: 101%;
 
     top: 0;
     left: 0;
@@ -238,4 +241,188 @@
 }
 .content-list__item a:hover {
   text-decoration: underline;
+}
+
+//================Портфолио====================================================================================
+.portfolio {
+  &__about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #323232;
+    opacity: 100%;
+    transition: opacity 0.3s linear 0.3s;
+  }
+  &__about:hover {
+    opacity: 0%;
+    transition: opacity 0.3s linear 0.3s;
+  }
+
+  &__body {
+    margin-top: 42px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2px;
+  }
+
+  &__screenshot {
+    position: relative;
+    padding: 0 0 85% 0;
+
+    &_big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+  &__screenshot img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    opacity: 100%;
+    transition: opacity 0.3s linear 0.3s;
+  }
+
+  &__screenshot img:hover {
+    opacity: 30%;
+    transition: opacity 0.3s linear 0.3s;
+  }
+}
+
+//================Адаптация портфолио====================================================================================
+@media (max-width: 992px) {
+  .portfolio__screenshot_big {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+//================Правая колонка====================================================================================
+//================Цитата====================================================================================
+.column-right__about {
+  margin-top: 70px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  position: relative;
+}
+//================Технологии====================================================================================
+.skills__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(35 / 24 * 100%);
+  letter-spacing: 0.01em;
+  margin: 60px 0 0 0;
+}
+.skills__body {
+  margin-top: 30px;
+  position: relative;
+}
+.skills__body::before {
+  position: absolute;
+  content: "";
+  background: #8ec6e6;
+  width: 1px;
+  height: 100%;
+}
+.column-right {
+  color: #ffffff;
+  padding: 0 30px;
+
+  &__skill:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &__skill {
+  }
+}
+.skill {
+  &__title {
+    padding-left: 25px;
+  }
+
+  &__bar {
+    margin-top: 7px;
+    background: #8ec6e6;
+    width: 100%;
+    height: 10px;
+  }
+}
+//================Личные качества====================================================================================
+.qualities__title {
+  margin: 60px 0 30px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(35 / 24 * 100%);
+  letter-spacing: 0.01em;
+}
+.column-right {
+  &__qualities:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+.quality {
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__bar {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 12px;
+  }
+
+  &__item {
+    position: relative;
+  }
+  &__item::after {
+    position: absolute;
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    width: 8px;
+    height: 8px;
+    top: 0;
+    left: 0;
+  }
+  &__item_full::after {
+    position: absolute;
+    content: "";
+    background: #ffffff;
+    width: 8px;
+    height: 8px;
+    top: 0;
+    left: 0;
+  }
+}
+//================Ссылки====================================================================================
+.personal__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(35 / 24 * 100%);
+  letter-spacing: 0.01em;
+  margin: 60px 0 0 0;
+}
+.personal__list {
+  margin-top: 30px;
+  position: relative;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(32 / 16 * 100%);
+}
+
+.personal__item {
+  padding-left: 35px;
 }
