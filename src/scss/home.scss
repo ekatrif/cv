@@ -1,11 +1,17 @@
 //=========Общие стили===========================================================================================
 
+//=========Общие стили - Адаптация===========================================================================================
+@media (max-width: 992px) {
+  .wrapper {
+    padding: 15px;
+  }
+}
 //=========Шапка===========================================================================================
 
 .column-left {
   width: 70%;
   padding-right: 15px;
-  padding-bottom: 100px;
+  //padding-bottom: 100px;
 }
 .column-left__header {
   display: flex;
@@ -85,6 +91,12 @@
 
 //========Адаптация Шапки============================================================================================
 
+@media (max-width: 992px) {
+  .column-left {
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+}
 @media (max-width: 767px) {
   .column-left__header {
     flex-direction: column-reverse;
@@ -116,7 +128,7 @@
   &__timeline {
     position: relative;
     flex: 0 0 auto;
-    height: 100%;
+    height: auto;
     width: 68px;
   }
   &__timeline:before {
@@ -136,13 +148,14 @@
   }
   &__main {
     display: flex;
-    height: 100%;
+    height: auto;
   }
 }
 .experience,
+.portfolio,
 .education {
   &__content {
-    margin-top: 44px;
+    margin-top: 54px;
   }
 }
 .content-block {
@@ -365,11 +378,10 @@
   line-height: calc(35 / 24 * 100%);
   letter-spacing: 0.01em;
 }
-.column-right {
-  &__qualities:not(:last-child) {
-    margin-bottom: 25px;
-  }
+.quality:not(:last-child) {
+  margin-bottom: 25px;
 }
+
 .quality {
   &__title {
     margin-bottom: 10px;
@@ -424,5 +436,70 @@
 }
 
 .personal__item {
-  padding-left: 35px;
+  padding-left: 27px;
+  overflow-wrap: anywhere;
+}
+
+//================Адаптация правой колонки====================================================================================
+
+@media (max-width: 992px) {
+  .column-right {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column-right__about {
+    flex: 0 1 100%;
+  }
+  .column-right__skills {
+    flex: 0 1 50%;
+  }
+  .column-right__qualities {
+    flex: 0 1 50%;
+  }
+  .column-right__personal {
+    flex: 0 1 50%;
+  }
+  .column-left,
+  .column-right {
+    width: 100%;
+  }
+  .column-right {
+    padding-bottom: 30px;
+  }
+  .wrapper > main {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+  .qualities__body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .quality {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .qualities__title {
+    text-align: right;
+  }
+
+  .quality__bar {
+    text-align: right;
+    padding-right: 4px;
+  }
+}
+@media (max-width: 600px) {
+  .column-right__skills {
+    flex: 0 1 100%;
+  }
+  .column-right__qualities {
+    flex: 0 1 100%;
+  }
+  .column-right__personal {
+    flex: 0 1 100%;
+  }
 }

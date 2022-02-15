@@ -42,7 +42,8 @@
   content: "\e904";
   position: absolute;
   margin-left: -27px;
-  margin-top: 4px;
+  margin-top: 9px;
+  font-size: 10px;
   color: #484fa0;
 }
 ._icon-arrow-list-dark:hover:before {
@@ -51,12 +52,9 @@
 ._icon-arrow-list-light:before {
   content: "\e904";
   position: absolute;
-  margin-left: -35px;
-  margin-top: 8px;
-  color: #04b2e7;
-  background: #ffffff;
-  width: 14px;
-  height: 14px;
+  margin-left: -27px;
+  margin-top: 11px;
+
   font-size: 10px;
 }
 ._icon-arrow-list-light:hover:before {
