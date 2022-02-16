@@ -31,7 +31,7 @@
 
     position: absolute;
 
-    //Настроить округление до наибольшего целого числа пикселей
+    //!Настроить округление до наибольшего целого числа пикселей
 
     width: 101%;
     height: 101%;
@@ -259,19 +259,17 @@
 //================Портфолио====================================================================================
 .portfolio {
   &__about {
+    padding: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 16px;
-    color: #323232;
-    opacity: 100%;
+    width: 90%;
+    visibility: hidden;
     transition: opacity 0.3s linear 0.3s;
   }
-  &__about:hover {
-    opacity: 0%;
-    transition: opacity 0.3s linear 0.3s;
-  }
+
+  //!Скрипт - при наведении на фото плавно появляется попап с описанием и ссылкой
 
   &__body {
     margin-top: 42px;
@@ -300,12 +298,42 @@
     transition: opacity 0.3s linear 0.3s;
   }
 
-  &__screenshot img:hover {
-    opacity: 30%;
+  /* &__screenshot img:hover {
+    opacity: 20%;
     transition: opacity 0.3s linear 0.3s;
+  }*/
+}
+.project {
+  color: #42489e;
+  &__list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 15px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__item::before {
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -2px;
+    content: "\2192";
+    top: 0;
+    left: 0;
   }
 }
-
+.project > h3 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 170%;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 //================Адаптация портфолио====================================================================================
 @media (max-width: 992px) {
   .portfolio__screenshot_big {
