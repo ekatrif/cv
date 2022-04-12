@@ -258,25 +258,23 @@
 
 //================Портфолио====================================================================================
 .portfolio {
-  &__about {
-    padding: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    visibility: hidden;
-    // transition: opacity 0.3s linear 0.3s;
-  }
+  // &__about {
+  //   padding: 15px;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   width: 90%;
+  //   visibility: hidden;
+  //   // transition: opacity 0.3s linear 0.3s;
+  // }
   .show {
-    display: block;
-    visibility: visible;
-    transition: visibility linear 0.5s;
+    opacity: 1;
+    transition: opacity 0.5s linear;
   }
   .hide {
-    display: none;
-    visibility: hidden;
-    transition: visibility linear 0.5s;
+    opacity: 0;
+    transition: opacity 0.5s linear;
   }
   &__body {
     margin-top: 42px;
@@ -296,8 +294,8 @@
     left: 0;
     top: 0;
     object-fit: cover;
-    opacity: 100%;
-    transition: opacity 0.3s linear 0.3s;
+    // opacity: 100%;
+    //transition: opacity 0.3s linear 0.3s;
   }
 }
 .project__about {
@@ -329,6 +327,31 @@
 }
 .about-project__url a:hover {
   text-decoration: underline;
+}
+
+.body-portfolio__tags > ul {
+  margin-top: 40px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.body-portfolio__tags ul li {
+  white-space: nowrap;
+  color: #fff;
+
+  text-align: center;
+  padding: 5px;
+}
+.body-portfolio__tags ul li:hover {
+  background-color: #42489e;
+  cursor: pointer;
+}
+.tag-active {
+  background-color: #42489e;
+}
+.tag-noactive {
+  background-color: #8ec6e6;
 }
 //================Адаптация портфолио====================================================================================
 @media (max-width: 992px) {
