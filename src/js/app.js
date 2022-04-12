@@ -197,3 +197,7 @@ import "./files/progress-bar.js";
 /* Подключаем скрипт Мои качества */
 import "./files/qualities.js";
 //============
+
+/* Подключаем скрипт Портфолио */
+import "./files/portfolio.js";
+//============

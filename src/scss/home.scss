@@ -266,26 +266,28 @@
     transform: translate(-50%, -50%);
     width: 90%;
     visibility: hidden;
-    transition: opacity 0.3s linear 0.3s;
+    // transition: opacity 0.3s linear 0.3s;
   }
-
-  //!Скрипт - при наведении на фото плавно появляется попап с описанием и ссылкой
-
+  .show {
+    display: block;
+    visibility: visible;
+    transition: visibility linear 0.5s;
+  }
+  .hide {
+    display: none;
+    visibility: hidden;
+    transition: visibility linear 0.5s;
+  }
   &__body {
     margin-top: 42px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 7px;
   }
 
   &__screenshot {
     position: relative;
     padding: 0 0 85% 0;
-
-    &_big {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
   }
   &__screenshot img {
     position: absolute;
@@ -297,42 +299,36 @@
     opacity: 100%;
     transition: opacity 0.3s linear 0.3s;
   }
-
-  /* &__screenshot img:hover {
-    opacity: 20%;
-    transition: opacity 0.3s linear 0.3s;
-  }*/
 }
-.project {
-  color: #42489e;
-  &__list {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-  }
-
-  &__item {
-    position: relative;
-    padding-left: 15px;
-  }
-  &__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  &__item::before {
-    position: absolute;
-    margin-left: -15px;
-    margin-top: -2px;
-    content: "\2192";
-    top: 0;
-    left: 0;
-  }
+.project__about {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding: 10px;
+  width: 100%;
 }
-.project > h3 {
-  text-align: center;
+
+.about-project__title {
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 170%;
-  font-weight: 600;
-  margin-bottom: 20px;
+  line-height: 24px;
+  text-align: left;
+
+  color: #277fc3;
+}
+.about-project__url,
+.about-project__url a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+
+  color: #666666;
+}
+.about-project__url a:hover {
+  text-decoration: underline;
 }
 //================Адаптация портфолио====================================================================================
 @media (max-width: 992px) {
