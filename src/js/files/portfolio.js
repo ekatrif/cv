@@ -2,7 +2,7 @@ const portfolioItems = [
   {
     id: 1,
     url: "https://promo.ofs.team",
-    img: "../img/portfolio/promo_ofs_team.jpg",
+    img: "@img/portfolio/promo_ofs_team.jpg",
     title: "Промо-сайт Элайнеры",
     tags: [
       "development",
@@ -16,7 +16,7 @@ const portfolioItems = [
   {
     id: 2,
     url: "https://www.имплантмен.рф",
-    img: "../img/portfolio/имплантмен_рф.jpg",
+    img: "@img/portfolio/имплантмен_рф.jpg",
     title: "Сайт хирургической стоматологии",
     tags: ["administration", "seo", "advertising"],
   },
@@ -24,7 +24,7 @@ const portfolioItems = [
   {
     id: 3,
     url: "https://isdk.ru",
-    img: "../img/portfolio/isdk_pro.jpg",
+    img: "@img/portfolio/isdk_pro.jpg",
     title: "Корпоративный сайт ISDK",
     tags: ["administration", "development"],
   },
@@ -32,7 +32,7 @@ const portfolioItems = [
   {
     id: 4,
     url: "http://bysina.ru",
-    img: "../img/portfolio/bysina_ru.jpg",
+    img: "@img/portfolio/bysina_ru.jpg",
     title: "Интернет-магазин Bysina",
     tags: ["administration", "development", "advertising"],
   },
@@ -40,7 +40,7 @@ const portfolioItems = [
   {
     id: 5,
     url: "http://stefco.ru",
-    img: "../img/portfolio/stefco_ru.jpg",
+    img: "@img/portfolio/stefco_ru.jpg",
     title: "Магазин сценического ооборудования",
     tags: ["functionalityExtension"],
   },
@@ -48,7 +48,7 @@ const portfolioItems = [
   {
     id: 6,
     url: "https://um-detki.ru",
-    img: "../img/portfolio/um-detki.ru.jpg",
+    img: "@img/portfolio/um-detki.ru.jpg",
     title: "Интернет-магазин настольных игр",
     tags: ["functionalityExtension", "development"],
   },
@@ -56,7 +56,7 @@ const portfolioItems = [
   {
     id: 7,
     url: "https://satinoff.ru",
-    img: "../img/portfolio/satinoff_ru.jpg",
+    img: "@img/portfolio/satinoff_ru.jpg",
     title: "Магазин постельного белья",
     tags: ["administration", "development"],
   },
@@ -64,7 +64,7 @@ const portfolioItems = [
   {
     id: 8,
     url: "https://keep-smiling.ru",
-    img: "../img/portfolio/keep-smiling_ru.jpg",
+    img: "@img/portfolio/keep-smiling_ru.jpg",
     title: "Сайт-визитка врача-ортодонта",
     tags: ["administration", "development"],
   },
@@ -72,7 +72,7 @@ const portfolioItems = [
   {
     id: 9,
     url: "https://globalstage.ru",
-    img: "../img/portfolio/globalstage_ru.jpg",
+    img: "@img/portfolio/globalstage_ru.jpg",
     title: "Сайт-визитка GlobalStage",
     tags: ["functionalityExtension"],
   },
