@@ -1,10 +1,16 @@
 const portfolioItems = [
   {
     id: 1,
-    url: "https://ofs.team",
+    url: "https://promo.ofs.team",
     img: "../img/portfolio/promo_ofs_team.jpg",
     title: "Промо-сайт Элайнеры",
-    tags: ["development", "administration", "seo", "functionalityExtension"],
+    tags: [
+      "development",
+      "administration",
+      "seo",
+      "functionalityExtension",
+      "advertising",
+    ],
   },
 
   {
@@ -28,7 +34,7 @@ const portfolioItems = [
     url: "http://bysina.ru",
     img: "../img/portfolio/bysina_ru.jpg",
     title: "Интернет-магазин Bysina",
-    tags: ["administration", "development"],
+    tags: ["administration", "development", "advertising"],
   },
 
   {
