@@ -1,6 +1,6 @@
 # CV. Резюме".
 
-**Ссылка на deploy**: https://ekatrif.github.io/cv/
+**Ссылка на deploy**: https://ekatrif.github.io/cv/dist/
 
 ## Стек технологий:
 
