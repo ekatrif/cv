@@ -223,13 +223,19 @@
   }
 
   &__text {
-    padding-top: 20px;
+    padding-top: 0.7em;
 
-    font-weight: 400;
+    font-weight: 700;
+    text-transform: uppercase;
     font-size: 16px;
     line-height: 170%;
 
     letter-spacing: 0.03em;
+
+    .spollers__body > & {
+      font-weight: 400;
+      text-transform: none;
+    }
   }
 
   &__images {
@@ -271,16 +277,7 @@
 
 //================Портфолио====================================================================================
 .portfolio {
-  // &__about {
-  //   padding: 15px;
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   width: 90%;
-  //   visibility: hidden;
-  //   // transition: opacity 0.3s linear 0.3s;
-  // }
+
   .show {
     opacity: 1;
     transition: opacity 0.5s linear;
@@ -323,7 +320,6 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px 0;
   width: 100%;
 }
 
@@ -346,9 +342,9 @@
 
 .about-project__link {
   text-align: center;
-  padding: 1em 2em;
+  padding: 0.5em 1.5em;
   border-radius: 0.5em;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .link-git {
@@ -408,10 +404,10 @@
 //================Правая колонка====================================================================================
 //================Цитата====================================================================================
 .column-right__about {
-  margin-top: 70px;
+  margin-top: 30px;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.8rem;
   line-height: 170%;
   text-align: left;
   letter-spacing: 0.03em;
@@ -425,7 +421,7 @@
   font-size: 24px;
   line-height: calc(35 / 24 * 100%);
   letter-spacing: 0.01em;
-  margin: 60px 0 0 0;
+  margin: 2em 0 0 0;
 }
 .skills__body {
   margin-top: 30px;
@@ -443,7 +439,7 @@
   padding: 0 30px;
 
   &__skill:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 1em;
   }
 
   &__skill {
@@ -459,7 +455,7 @@
     margin-top: 5px;
     background: #8ec6e6;
     width: calc(100% - 30px);
-    height: 10px;
+    height: 4px;
 
     position: relative;
     overflow: hidden;
@@ -477,7 +473,6 @@
   }
 
   &__bar:after {
-    //background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9InJnYigyNTUsIDI1NSwgMjU1KSIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+PHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9InJnYigwLDAsMCkiIHN0b3Atb3BhY2l0eT0iMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSJyZ2IoMCwwLDApIiBzdG9wLW9wYWNpdHk9IjAiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0icmdiKDI1NSwgMjU1LCAyNTUpIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0icmdiKDI1NSwgMjU1LCAyNTUpIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0icmdiKDAsMCwwKSIgc3RvcC1vcGFjaXR5PSIwIi8+PHN0b3Agb2Zmc2V0PSIzMDAlIiBzdG9wLWNvbG9yPSJyZ2IoMCwwLDApIiBzdG9wLW9wYWNpdHk9IjAiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjbGVzc2hhdC1nZW5lcmF0ZWQpIiAvPjwvc3ZnPg==);
     background: #d0ebff;
     background-size: 40px 40px;
     position: absolute;
@@ -490,7 +485,7 @@
 }
 //================Личные качества====================================================================================
 .qualities__title {
-  margin: 60px 0 30px 0;
+  margin: 1.5em 0 1em;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -498,7 +493,7 @@
   letter-spacing: 0.01em;
 }
 .quality:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 1em;
 }
 
 .quality {
@@ -543,10 +538,9 @@
   font-size: 24px;
   line-height: calc(35 / 24 * 100%);
   letter-spacing: 0.01em;
-  margin: 60px 0 0 0;
+  margin: 1.5em 0 0.8em;
 }
 .personal__list {
-  margin-top: 30px;
   position: relative;
 
   font-weight: 400;

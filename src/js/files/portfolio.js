@@ -113,6 +113,9 @@ const portfolioItems = [
 const portfolioContainer = document.getElementById("portfolio-container");
 const portfolioTags = document.getElementById("portfolio-tags");
 
+getFiteredItems('ecommerce');
+showContent();
+
 //Отображает элементы портфолио
 
 function insertPortfolioItems(array) {
@@ -122,7 +125,6 @@ function insertPortfolioItems(array) {
     <div class="portfolio__screenshot project">
       <a href="${portfolioItem.deploy}" target="_blank" rel="nofollow"><img src="${portfolioItem.img}" alt="" /></a>
       <div class="project__about about-project">
-        <h3 class="about-project__title">${portfolioItem.title}</h3>
         <div class="about-project__url">
           <a class="about-project__link link-git" href="${portfolioItem.git}" target="_blank" rel="nofollow">Guthub</a></button>
           <a class="about-project__link link-demo" href="${portfolioItem.deploy}" target="_blank" rel="nofollow">Демо</a></>
@@ -139,12 +141,8 @@ portfolioTags.addEventListener("click", function (e) {
   hideContent();
   toggleTagClass(e);
   const currentTag = e.target.getAttribute("data-tag");
-  if (currentTag === "all") {
-    showContent();
-  } else {
-    getFiteredItems(currentTag);
-    showContent();
-  }
+  getFiteredItems(currentTag);
+  showContent();
 });
 
 //Переключение стилей плашек тегов
@@ -184,7 +182,7 @@ function showContent() {
 async function getFiteredItems(tag) {
   await new Promise((resolve) => setTimeout(resolve, 500));
   let filteredArray = [];
-  filteredArray = portfolioItems.filter((item) => item.tags.includes(tag));
+  filteredArray = tag === "all" ? [...portfolioItems] : portfolioItems.filter((item) => item.tags.includes(tag));
   portfolioContainer.textContent = "";
   insertPortfolioItems(filteredArray);
 }
