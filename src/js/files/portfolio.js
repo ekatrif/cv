@@ -1,80 +1,112 @@
 const portfolioItems = [
   {
     id: 1,
-    url: "https://promo.ofs.team",
-    img: "@img/portfolio/promo_ofs_team.jpg",
-    title: "Промо-сайт Элайнеры",
+    git: "https://github.com/ekatrif/eCommerce-Application",
+    deploy: "https://touristtracks-store.netlify.app/",
+    img: "@img/portfolio/1.jpg",
+    title: "Интернет-магазин спортивных товаров",
     tags: [
-      "development",
-      "administration",
-      "seo",
-      "functionalityExtension",
-      "advertising",
+      "ecommerce",
     ],
   },
 
   {
     id: 2,
-    url: "https://www.имплантмен.рф",
-    img: "@img/portfolio/имплантмен_рф.jpg",
-    title: "Сайт хирургической стоматологии",
-    tags: ["administration", "seo", "advertising"],
+    git: "https://github.com/ekatrif/Momentum",
+    deploy: "https://ekatrif.github.io/Momentum/dist/index.html",
+    img: "@img/portfolio/2.jpg",
+    title: "Клон приложения Momentum",
+    tags: ["spa"],
   },
 
   {
     id: 3,
-    url: "https://isdk.ru",
-    img: "@img/portfolio/isdk_pro.jpg",
-    title: "Корпоративный сайт ISDK",
-    tags: ["administration", "development"],
+    git: "https://github.com/ekatrif/minesweeper",
+    deploy: "https://ekatrif.github.io/minesweeper/dist/",
+    img: "@img/portfolio/3.jpg",
+    title: "Клон игры Minesweeper",
+    tags: ["spa", "game"],
   },
 
   {
     id: 4,
-    url: "http://bysina.ru",
-    img: "@img/portfolio/bysina_ru.jpg",
-    title: "Интернет-магазин Bysina",
-    tags: ["administration", "development", "advertising"],
+    git: "https://github.com/ekatrif/rs-selectors",
+    deploy: "https://ekatrif.github.io/rs-selectors/dist/",
+    img: "@img/portfolio/4.jpg",
+    title: "Клон приложения CSS Diner",
+    tags: ["spa", "game"],
   },
 
   {
     id: 5,
-    url: "http://stefco.ru",
-    img: "@img/portfolio/stefco_ru.jpg",
-    title: "Магазин сценического ооборудования",
-    tags: ["functionalityExtension"],
+    git: "https://github.com/ekatrif/shelter",
+    deploy: "https://ekatrif.github.io/shelter/dist/",
+    img: "@img/portfolio/5.png",
+    title: "Сайт приюта для животных",
+    tags: ["landing"],
   },
 
   {
     id: 6,
-    url: "https://um-detki.ru",
-    img: "@img/portfolio/um-detki.ru.jpg",
-    title: "Интернет-магазин настольных игр",
-    tags: ["functionalityExtension", "development"],
+    git: "https://github.com/ekatrif/plants",
+    deploy: "https://ekatrif.github.io/plants/",
+    img: "@img/portfolio/6.jpg",
+    title: "Лэндинг Plants",
+    tags: ["landing",],
   },
 
   {
     id: 7,
-    url: "https://satinoff.ru",
-    img: "@img/portfolio/satinoff_ru.jpg",
-    title: "Магазин постельного белья",
-    tags: ["administration", "development"],
+    git: "https://github.com/ekatrif/virtual-keyboard",
+    deploy: "https://ekatrif.github.io/virtual-keyboard",
+    img: "@img/portfolio/7.jpg",
+    title: "Виртуальная клавиатура",
+    tags: ["spa"],
   },
 
   {
     id: 8,
-    url: "https://keep-smiling.ru",
-    img: "@img/portfolio/keep-smiling_ru.jpg",
-    title: "Сайт-визитка врача-ортодонта",
-    tags: ["administration", "development"],
+    git: "https://github.com/ekatrif/films-rating",
+    deploy: "https://ekatrif.github.io/films-rating/dist/",
+    img: "@img/portfolio/8.jpg",
+    title: "Голосование за фильм недели",
+    tags: ["spa"],
   },
 
   {
     id: 9,
-    url: "https://globalstage.ru",
-    img: "@img/portfolio/globalstage_ru.jpg",
-    title: "Сайт-визитка GlobalStage",
-    tags: ["functionalityExtension"],
+    git: "https://github.com/ekatrif/spiker-time-control",
+    deploy: "https://ekatrif.github.io/spiker-time-control/dist/",
+    img: "@img/portfolio/9.jpg",
+    title: "Контроль времени выступления спикера",
+    tags: ["spa"],
+  },
+
+  {
+    id: 10,
+    git: "https://github.com/ekatrif/online-shop-prototype",
+    deploy: "https://ekatrif.github.io/online-shop-prototype/",
+    img: "@img/portfolio/10.jpg",
+    title: "Прототип интернет-магазина",
+    tags: ["ecommerce"],
+  },
+
+  {
+    id: 11,
+    git: "https://github.com/ekatrif/1146-Edu-project",
+    deploy: "https://ekatrif.github.io/1146-Edu-project/",
+    img: "@img/portfolio/11.jpg",
+    title: "Интернет-магазина постеров",
+    tags: ["ecommerce"],
+  },
+
+  {
+    id: 12,
+    git: "https://github.com/ekatrif/funbox-test-task",
+    deploy: "https://ekatrif.github.io/funbox-test-task/dist/",
+    img: "@img/portfolio/12.png",
+    title: "Каталог товаров",
+    tags: ["ecommerce"],
   },
 ];
 
@@ -86,14 +118,16 @@ const portfolioTags = document.getElementById("portfolio-tags");
 function insertPortfolioItems(array) {
   let itemTemplate;
   for (const portfolioItem of array) {
-    itemTemplate = `<div class="portfolio__screenshot project">
-    <img src="${portfolioItem.img}" alt="" />
-    <div class="project__about about-project">
-    <h3 class="about-project__title">${portfolioItem.title}</h3>
-    <div class="about-project__url">
-    <span>URL: </span><a href="${portfolioItem.url}" target="_blank" rel="nofollow">${portfolioItem.url}</a>
-    </div>
-    </div>
+    itemTemplate = `
+    <div class="portfolio__screenshot project">
+      <a href="${portfolioItem.deploy}" target="_blank" rel="nofollow"><img src="${portfolioItem.img}" alt="" /></a>
+      <div class="project__about about-project">
+        <h3 class="about-project__title">${portfolioItem.title}</h3>
+        <div class="about-project__url">
+          <a class="about-project__link link-git" href="${portfolioItem.git}" target="_blank" rel="nofollow">Guthub</a></button>
+          <a class="about-project__link link-demo" href="${portfolioItem.deploy}" target="_blank" rel="nofollow">Демо</a></>
+        </div>
+      </div>
     </div>`;
     portfolioContainer.insertAdjacentHTML("beforeend", itemTemplate);
   }
@@ -105,8 +139,12 @@ portfolioTags.addEventListener("click", function (e) {
   hideContent();
   toggleTagClass(e);
   const currentTag = e.target.getAttribute("data-tag");
-  getFiteredItems(currentTag);
-  showContent();
+  if (currentTag === "all") {
+    showContent();
+  } else {
+    getFiteredItems(currentTag);
+    showContent();
+  }
 });
 
 //Переключение стилей плашек тегов

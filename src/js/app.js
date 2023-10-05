@@ -201,3 +201,15 @@ import "./files/qualities.js";
 /* Подключаем скрипт Портфолио */
 import "./files/portfolio.js";
 //============
+
+/* Подключаем скрипт Lightbox */
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '.block__images',
+  children: 'a',
+  pswpModule: () => import('photoswipe')
+});
+lightbox.init();
+//============

@@ -15,7 +15,7 @@
   }
 }
 ._icon-email:before {
-  content: "\e900";
+  content: "\e945";
   position: absolute;
   margin-left: -27px;
   margin-top: 2px;
@@ -27,19 +27,19 @@
   margin-top: 2px;
 }
 ._icon-phone:before {
-  content: "\e902";
+  content: "\e958";
   position: absolute;
   margin-left: -27px;
   margin-top: 2px;
 }
-._icon-quote:before {
-  content: "\e903";
+._icon-telegram:before {
+  content: "\e900";
   position: absolute;
-  margin-top: -42px;
-  font-size: 18px;
+  margin-left: -27px;
+  margin-top: 2px;
 }
 ._icon-arrow-list-dark:before {
-  content: "\e904";
+  content: "\ea3c";
   position: absolute;
   margin-left: -27px;
   margin-top: 9px;
@@ -50,7 +50,7 @@
   color: #04b2e7;
 }
 ._icon-arrow-list-light:before {
-  content: "\e904";
+  content: "\ea3c";
   position: absolute;
   margin-left: -27px;
   margin-top: 11px;

@@ -214,7 +214,7 @@
   &__subtitle {
     font-weight: 400;
     font-size: 14px;
-    line-height: 4.5%;
+    line-height: 1.5;
     text-align: left;
     letter-spacing: 0.03em;
 
@@ -230,6 +230,19 @@
     line-height: 170%;
 
     letter-spacing: 0.03em;
+  }
+
+  &__images {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin: 1.5em 0;
+
+    & img {
+      width: 70%;
+      height: auto;
+      cursor: pointer;
+    }
   }
 }
 .title-article {
@@ -277,7 +290,7 @@
     transition: opacity 0.5s linear;
   }
   &__body {
-    margin-top: 42px;
+    margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 7px;
@@ -294,15 +307,23 @@
     left: 0;
     top: 0;
     object-fit: cover;
-    // opacity: 100%;
-    //transition: opacity 0.3s linear 0.3s;
+    filter: grayscale(0.6);
+    transition: all 0.5s linear;
+
+    &:hover {
+      filter: none;
+      transition: all 0.5s linear;
+    }
   }
 }
 .project__about {
   position: absolute;
   bottom: 0;
-  background-color: white;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
   width: 100%;
 }
 
@@ -311,41 +332,65 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  text-align: left;
+  text-align: center;
 
   color: #277fc3;
 }
-.about-project__url,
-.about-project__url a {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: left;
 
-  color: #666666;
+.about-project__url {
+  display: flex;
+  gap: 1em;
+  margin: 0.7em 0;
+  transition: all 0.5s linear;
 }
-.about-project__url a:hover {
-  text-decoration: underline;
+
+.about-project__link {
+  text-align: center;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  font-size: 1rem;
+}
+
+.link-git {
+  color: #fff;
+  background-color: #9b9b9b;
+
+  &:hover {
+    background-color: #42489e;
+    transition: all 0.5s linear;
+  }
+}
+
+.link-demo {
+  color: #fff;
+  background-color: #8ec6e6;
+
+  &:hover {
+    background-color: #42489e;
+    transition: all 0.5s linear;
+  }
 }
 
 .body-portfolio__tags > ul {
   margin-top: 40px;
   display: flex;
-  gap: 5px;
+  gap: 1em;
   flex-wrap: wrap;
   justify-content: center;
 }
 .body-portfolio__tags ul li {
   white-space: nowrap;
   color: #fff;
-
   text-align: center;
-  padding: 5px;
+  padding: 0.8em 1.8em;
+  border-radius: 0.5em;
+  font-size: 0.9rem;
+  transition: all 0.5s linear;
+  cursor: pointer;
 }
 .body-portfolio__tags ul li:hover {
   background-color: #42489e;
-  cursor: pointer;
+  transition: all 0.5s linear;
 }
 .tag-active {
   background-color: #42489e;

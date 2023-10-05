@@ -29,6 +29,6 @@ async function drawBar(currentBar) {
       currentWidth += speed;
     }
   }, 10);
-  await new Promise((resolve) => setTimeout(resolve, 1500));
+  await new Promise((resolve) => setTimeout(resolve, 0));
   clearInterval(interval);
 }
