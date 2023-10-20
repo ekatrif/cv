@@ -481,6 +481,7 @@ h6 {
 .column-right {
   width: 30%;
   background: linear-gradient(180deg, #484fa0 0%, #04b2e7 100%);
+  justify-content: space-between;
 }
 
 .content-list__item {
@@ -729,6 +730,24 @@ h6 {
   left: 0;
 }
 
+.certs__title {
+  margin: 1.5em 0 1em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 145.8333333333%;
+  letter-spacing: 0.01em;
+}
+
+.languages__title {
+  margin: 1.5em 0 1em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 145.8333333333%;
+  letter-spacing: 0.01em;
+}
+
 .personal__title {
   font-style: normal;
   font-weight: 700;
@@ -766,6 +785,9 @@ h6 {
     flex: 0 1 50%;
   }
   .column-right__qualities {
+    flex: 0 1 50%;
+  }
+  .column-right__certs {
     flex: 0 1 50%;
   }
   .column-right__personal {
@@ -808,6 +830,12 @@ h6 {
     flex: 0 1 100%;
   }
   .column-right__qualities {
+    flex: 0 1 100%;
+  }
+  .column-right__certs {
+    flex: 0 1 100%;
+  }
+  .column-right__languages {
     flex: 0 1 100%;
   }
   .column-right__personal {
