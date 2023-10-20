@@ -180,7 +180,7 @@ export const translation = {
     en: 'Download CV'
   },
   cv: {
-    ru: 'cv-ru',
-    en: 'cv'
+    ru: 'https://drive.google.com/file/d/1SIMhnrz2XNm-Ym7mH28oq2scwWPJzSo2',
+    en: 'https://drive.google.com/file/d/1gTmErF5ALkNH5NHivkj-dnRQ88ye4H97'
   },
 };

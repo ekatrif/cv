@@ -12,7 +12,7 @@ export const renderLeftSide = () => {
       <div class="about__title">${translation.name[language]} <span>${translation.surname[language]}</span></div>
       <div class="about__subtitle">${translation.position[language]}</div>
       <div class="about__link">
-        <a href="../../img/files/${translation.cv[language]}.pdf">${translation.download[language]}</a>
+        <a href="${translation.cv[language]}">${translation.download[language]}</a>
       </div>
       <div class="about__contacts contacts">
         <ul class="contacts__list">
