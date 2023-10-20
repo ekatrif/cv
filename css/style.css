@@ -298,7 +298,21 @@ h6 {
   line-height: 20px;
   letter-spacing: 0.005em;
   text-transform: uppercase;
-  margin: 12px 0 30px 0;
+  margin: 12px 0 20px 0;
+}
+.about__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  margin: 0 0 20px;
+  transition: all 0.5s linear;
+  color: #42489e;
+}
+.about__link a:hover {
+  text-decoration: underline;
+  transition: all 0.5s linear;
 }
 .about__contacts {
   font-weight: 400;
