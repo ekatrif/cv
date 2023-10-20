@@ -7,7 +7,7 @@ import 'photoswipe/style.css';
 import * as flsScroll from "./js/files/scroll/scroll.js";
 
 const renderHtml = () => {
-  const language = 'ru';
+  const language = 'en';
   localStorage.setItem('language', language);
   renderLeftSide();
   renderRightSide();
