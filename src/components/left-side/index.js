@@ -11,6 +11,9 @@ export const renderLeftSide = () => {
     <div class="header__about about">
       <div class="about__title">${translation.name[language]} <span>${translation.surname[language]}</span></div>
       <div class="about__subtitle">${translation.position[language]}</div>
+      <div class="about__link">
+        <a href="../../img/files/${translation.cv[language]}.pdf">${translation.download[language]}</a>
+      </div>
       <div class="about__contacts contacts">
         <ul class="contacts__list">
           <li class="contacts__item _icon-phone">

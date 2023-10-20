@@ -175,4 +175,12 @@ export const translation = {
     ru: 'Сертификаты',
     en: 'Certifications'
   },
+  download: {
+    ru: 'Скачать резюме',
+    en: 'Download CV'
+  },
+  cv: {
+    ru: 'cv-ru',
+    en: 'cv'
+  },
 };
