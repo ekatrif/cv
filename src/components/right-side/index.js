@@ -106,21 +106,6 @@ export const renderRightSide = () => {
     </div>
   </div>
   <div class="column-right__qualities qualities">
-    <div class="qualities__title">${translation.certifications[language]}</div>
-    <ul class="personal__list">
-      <li class="personal__item _icon-arrow-list-light">
-      <a href="http://app.rs.school/certificate/8gnkockf" target="_blank">
-        Javascript / Front-end 2023Q1 (Javascript)
-      </a>
-      </li>
-      <li class="personal__item _icon-arrow-list-light">
-      <a href="https://www.efset.org/cert/q5Nzny" target="_blank">
-        EF SET English Certificate (71 / 100)
-      </a>
-      </li>
-    </ul>
-  </div>
-  <div class="column-right__qualities qualities">
     <div class="qualities__title">${translation.softSkills[language]}</div>
     <div class="qualities__body">
       <div class="quality">
@@ -149,8 +134,23 @@ export const renderRightSide = () => {
       </div>
     </div>
   </div>
-  <div class="column-right__personal personal">
-    <div class="personal__title">${translation.languages[language]}</div>
+  <div class="column-right__certs certs">
+    <div class="certs__title">${translation.certifications[language]}</div>
+    <ul class="personal__list">
+      <li class="personal__item _icon-arrow-list-light">
+      <a href="http://app.rs.school/certificate/8gnkockf" target="_blank">
+        Javascript / Front-end 2023Q1 (Javascript)
+      </a>
+      </li>
+      <li class="personal__item _icon-arrow-list-light">
+      <a href="https://www.efset.org/cert/q5Nzny" target="_blank">
+        EF SET English Certificate (71 / 100)
+      </a>
+      </li>
+    </ul>
+  </div>
+  <div class="column-right__languages languages">
+    <div class="languages__title">${translation.languages[language]}</div>
     <ul class="personal__list">
       <li class="personal__item _icon-arrow-list-light">
       ${translation.english[language]}
