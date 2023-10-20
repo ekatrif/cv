@@ -106,6 +106,21 @@ export const renderRightSide = () => {
     </div>
   </div>
   <div class="column-right__qualities qualities">
+    <div class="qualities__title">${translation.certifications[language]}</div>
+    <ul class="personal__list">
+      <li class="personal__item _icon-arrow-list-light">
+      <a href="http://app.rs.school/certificate/8gnkockf" target="_blank">
+        Javascript / Front-end 2023Q1 (Javascript)
+      </a>
+      </li>
+      <li class="personal__item _icon-arrow-list-light">
+      <a href="https://www.efset.org/cert/q5Nzny" target="_blank">
+        EF SET English Certificate (71 / 100)
+      </a>
+      </li>
+    </ul>
+  </div>
+  <div class="column-right__qualities qualities">
     <div class="qualities__title">${translation.softSkills[language]}</div>
     <div class="qualities__body">
       <div class="quality">
@@ -155,6 +170,11 @@ export const renderRightSide = () => {
         <a target="_blank" href="https://github.com/ekatrif"
           >Github</a
         >
+      </li>
+      <li class="personal__item _icon-arrow-list-light">
+      <a target="_blank" href="http://www.linkedin.com/in/ekatrif"
+        >LinkedIn</a
+      >
       </li>
       <li class="personal__item _icon-arrow-list-light">
         <a target="_blank" href="https://www.codewars.com/users/rsschool_8ce2c48f923ed0a1"

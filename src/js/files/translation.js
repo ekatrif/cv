@@ -121,7 +121,7 @@ export const translation = {
   },
   softSkills: {
     ru: 'Личные качества',
-    en: 'Expertise'
+    en: 'Soft skills'
   },
   team: {
     ru: 'Командная работа',
@@ -153,11 +153,11 @@ export const translation = {
   },
   languages: {
     ru: 'Языки',
-    en: 'Language'
+    en: 'Languages'
   },
   english: {
-    ru: 'Английский (B2)',
-    en: 'English (B2)'
+    ru: 'Английский (C1)',
+    en: 'English (C1)'
   },
   french: {
     ru: 'Французский (B2)',
@@ -165,10 +165,14 @@ export const translation = {
   },
   russian: {
     ru: 'Русский (Родной)',
-    en: 'Russian (native)'
+    en: 'Russian (Native)'
   },
   links: {
     ru: 'Ссылки',
     en: 'Links'
+  },
+  certifications: {
+    ru: 'Сертификаты',
+    en: 'Certifications'
   },
 };
